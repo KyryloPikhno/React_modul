@@ -12,7 +12,7 @@ export let simpsons = [
         surname: 'Simpson',
         age: 40,
         info: 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.',
-        photo: 'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
+        photo:'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'
     },
     {
         name: 'Marge',
