@@ -7,7 +7,7 @@ function App() {
       <div className={'app'}>
         <h1>{'task_1'}</h1>
     <Persons/>
-          <h2>{'task_2'}</h2>
+          <h1>{'task_2'}</h1>
           <Characters/>
   </div>)
 }
