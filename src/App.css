@@ -1,18 +1,28 @@
+h1{
+ margin-left: 300px;
+}
+
 .container{
-display: flex;
- flex-direction: column;
+ padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ justify-content: center;
+ background: rgba(243,197,6,0.49);
+ text-align: center;
 }
 
 .box{
  display: flex;
  flex-direction: column;
  align-items: center;
- width:300px;
+ width:420px;
  border: 2px solid black;
+ background: aqua;
 }
 
 .pic{
- width: 90%;
+ width: 30%;
 }
 
 .p{
