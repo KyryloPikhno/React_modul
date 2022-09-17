@@ -1,3 +1,66 @@
+h1{
+    margin-left: 300px;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    text-align: center;
+}
+
+.info{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:420px;
+    border: 2px solid white;
+    background: floralwhite;
+    padding: 20px 0;
+}
+
+.box,.boxInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:420px;
+    border: 2px solid white;
+    background: darkgrey;
+    padding: 20px 0;
+}
+
+.boxInfo{
+    background: floralwhite;
+}
+
+.pic{
+    width: 30%;
+}
+
+.button{
+    border: 2px solid white;
+    background: black;
+    color: white;
+    width: 100px;
+    transition: 0.2s;
+}
+
+.button:hover{
+    color: black;
+    width: 105px;
+    background: chartreuse;
+    transition: 0.2s;
+    box-shadow: 2px 2px 15px;
+}
+
+
+
 /*.App {*/
 /*  text-align: center ;*/
 /*}*/
