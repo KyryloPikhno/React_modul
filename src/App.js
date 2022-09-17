@@ -1,11 +1,15 @@
 import './App.css';
 import Users from "./components/users/Users";
+import Rockets from "./componentsSpaceX/rockets/Rockets";
+
 
 function App(){
   return (
     <div className="App">
       <h1>task_1</h1>
     <Users/>
+        <h1>task_2</h1>
+        <Rockets/>
     </div>
   );
 }

@@ -5,12 +5,12 @@ let axiosInstance = axios.create({
     // headers:{'Content-Type':'application/json',}
 });
 
-const getUsersAxios =()=>{
-    return axiosInstance.get()
+const getUsersAxios = () =>{
+    return axiosInstance.get();
 }
 
-const getUserAxios =(id)=>{
-    return axiosInstance.get('/'+id)
+const getUserAxios = (id) =>{
+    return axiosInstance.get('/' + id);
 }
 
 export {getUserAxios,getUsersAxios};

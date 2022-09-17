@@ -1,5 +1,5 @@
 export function User(props){
-    let {user,lift} = props
+    let {user,lift} = props;
 
     return(
         <div className={'box'}>
@@ -7,7 +7,7 @@ export function User(props){
             <p>username: {user.username}</p>
             <p>{user.email}</p>
 
-            <button onClick={()=>{
+            <button className={'button'} onClick={()=>{
                 lift(user)
             }
             }>{'info'}</button>

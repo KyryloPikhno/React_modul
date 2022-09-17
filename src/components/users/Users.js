@@ -4,16 +4,14 @@ import {useEffect, useState} from "react";
 import {User} from "../user/User";
 
 export default function Users(){
-
     let [users,setUsers] = useState([])
     let [user,setUser] = useState(null)
 
-   const lift =(user)=>{
-        setUser(user)
+   const lift =(obj)=>{
+        setUser(obj);
    }
 
     useEffect(()=>{
-
         getUsersAxios()
             .then(value => {
                 setUsers(value.data)
@@ -26,7 +24,9 @@ export default function Users(){
                 <h3>{user?.id} {user?.name}</h3>
                 <p>{user?.phone}</p>
             </div>
-            {users.map((user,index)=>(<User user={user} key={index} lift={lift}/>))}
+            {
+                users.map((user)=>(<User user={user} key={user.id} lift={lift}/>))
+            }
         </div>
     )
 }
