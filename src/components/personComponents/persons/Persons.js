@@ -1,4 +1,4 @@
-import {simpsons} from "../data";
+import {simpsons} from "../../data";
 import Person from "../person/person";
 
 export default function Persons(){

@@ -1,8 +1,8 @@
 import './App.css';
-import Persons from "./components/personComponents/Persons";
-import Characters from "./components/RickAndMortyComponents/Characters";
-import Users from "./components/users/Users";
-import Comments from "./components/comments/Comments";
+import Persons from "./components/personComponents/persons/Persons";
+import Characters from "./components/RickAndMortyComponents/characters/Characters";
+import Users from "./components/userComponents/users/Users";
+import Comments from "./components/commentsComponents/comments/Comments";
 
 function App() {
   return(

@@ -14,7 +14,7 @@ export default function Users(){
         .then(value=> value.json())
         .then(value => setUsers(value.splice(0,8)))
     },[])
-    return(<div className={'container'}>
+    return(<div className={'containerForUsers'}>
         <div className={'box'}>
            <p>{'id:'} {user?.id}</p>
             <p>{'phone:'} <a href={'user?.phone'}>{user?.phone}</a></p>
