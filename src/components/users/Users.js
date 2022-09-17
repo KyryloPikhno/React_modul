@@ -16,17 +16,16 @@ export default function Users(){
 
         getUsersAxios()
             .then(value => {
-
                 setUsers(value.data)
             })
     },[])
 
     return(
-
-        <div>
-            <hr/>
-            <div>{user}</div>
-<hr/>
+        <div className={'container'}>
+            <div className={'info'}>
+                <h3>{user?.id} {user?.name}</h3>
+                <p>{user?.phone}</p>
+            </div>
             {users.map((user,index)=>(<User user={user} key={index} lift={lift}/>))}
         </div>
     )

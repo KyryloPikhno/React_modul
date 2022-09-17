@@ -2,10 +2,13 @@ export function User(props){
     let {user,lift} = props
 
     return(
-        <div>
-            <h3>{user.name}</h3>
+        <div className={'box'}>
+            <h3>id: {user.id} {user.name}</h3>
+            <p>username: {user.username}</p>
+            <p>{user.email}</p>
+
             <button onClick={()=>{
-                lift(user.email)
+                lift(user)
             }
             }>{'info'}</button>
         </div>
