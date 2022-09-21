@@ -1,3 +1,5 @@
 export * from './cars/Cars';
 export * from './car/Car';
-export * from './carForm/CarForm';
+export * from './carsForms/CarsForm'
+export default class Cars {
+}
