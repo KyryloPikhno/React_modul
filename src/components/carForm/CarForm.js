@@ -1,14 +1,15 @@
 import {useForm} from "react-hook-form";
-import {useEffect} from "react";
+
 import {joiResolver} from "@hookform/resolvers/joi";
 
 import {carValidator} from "../validators";
 import {carService} from "../../services";
 import css from './CarForm.module.css'
+import {useEffect} from "react";
 
 export default function CarForm(props){
 
-    const{setCars}=props
+    const{setCars} = props
 
     const{register,handleSubmit,reset,formState:{errors,isValid},setValue} = useForm({
          resolver:joiResolver(carValidator),
@@ -27,6 +28,9 @@ export default function CarForm(props){
         setCars(cars=>[...cars,data])
         reset()
     }
+
+
+
 
     return(<form className={css.box} onChange={()=>console.log(errors)} onSubmit={handleSubmit(submit)}>
         <input type='text' placeholder={'model'} {...register('model' )} />

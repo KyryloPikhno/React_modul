@@ -5,6 +5,8 @@ import {carService} from "../../services";
 import CarForm from "../carForm/CarForm";
 import css from './Cars.module.css'
 
+
+
 export default function Cars(){
     const [cars, setCars] = useState([])
 
@@ -12,9 +14,11 @@ export default function Cars(){
         carService.getAll().then(value=>setCars(value.data))
     },[])
 
-    return(<div className={css.container}>
-        <CarForm setCars={setCars}/>
 
-        {cars.map(car => <Car car={car} key={car.id} setCars={setCars}/>)}
+    return(<div className={css.container}>
+
+        <CarForm setCars={setCars} />
+
+        {cars.map(car => <Car car={car} key={car.id} setCars={setCars}  />)}
     </div>)
 }
