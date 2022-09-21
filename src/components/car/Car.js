@@ -1,11 +1,12 @@
 import css from './Car.module.css'
 import {carService} from "../../services";
+import {useEffect} from "react";
 
 
 
 
 export default function Car(props){
-    let{car,setCars,setValue} = props
+    let{car,setCars,setCar,setValue} = props
 
     const deleteCar = async ()=>{
        await carService.deleteById(car.id)
@@ -16,23 +17,14 @@ export default function Car(props){
         })
     }
 
-
-    const updateCar = async ()=> {
-        await carService.updateById(car.id)
-        setCars(cars=>{
-            const index = cars.findIndex(value => value.id === car.id)
-            cars.findIndex(value => value.model === 'hui')
-        })
-
-        // setCars(cars=>{
-        //     const index = cars.findIndex(value => value.id === car.id)
-        //     cars.splice(index, 1)
-        //     return[...cars]
-        // })
-
-
-
-    }
+    //
+    // const updateCar = async ()=> {
+    //     await carService.updateById(car.id, car)
+    //         car.model = 'p'
+    //         console.log(car)
+    //
+    //
+    // }
 
 
     return(<div className={css.box} >
