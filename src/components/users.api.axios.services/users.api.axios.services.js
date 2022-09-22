@@ -8,4 +8,6 @@ let getUsersAxios = () =>{
     return axiosService()
 }
 
-export {getUsersAxios}
+export {
+    getUsersAxios
+}
