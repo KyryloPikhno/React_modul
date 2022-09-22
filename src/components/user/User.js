@@ -1,12 +1,10 @@
 const User = (props) => {
 
-    const {user} = props
+    const {user, getUserId} = props
 
     return(<div>
-        <div>id :{user.id}</div>
-        <div>name :{user.name}</div>
-        <div>username :{user.username}</div>
-        <div>email :{user.email}</div>
+        <div>id :{user.id} name: {user.name}</div>
+        <button onClick={()=> getUserId(user.id)}>show posts</button>
     </div>)
 }
 
