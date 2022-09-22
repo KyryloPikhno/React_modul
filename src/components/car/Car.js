@@ -1,12 +1,12 @@
 import css from './Car.module.css'
 import {carService} from "../../services";
-import {useEffect} from "react";
 
 
 
 
 export default function Car(props){
-    let{car,setCars,setCar,setValue} = props
+
+    let{car,setCars} = props
 
     const deleteCar = async ()=>{
        await carService.deleteById(car.id)
@@ -17,14 +17,11 @@ export default function Car(props){
         })
     }
 
-    //
-    // const updateCar = async ()=> {
-    //     await carService.updateById(car.id, car)
-    //         car.model = 'p'
-    //         console.log(car)
-    //
-    //
-    // }
+    const updateCar = async ()=>{
+        const data = await carService.getById()
+        console.log(data)
+        // setCars(cars=>[...cars,data])
+    }
 
 
     return(<div className={css.box} >

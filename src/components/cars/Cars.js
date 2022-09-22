@@ -8,8 +8,11 @@ import css from './Cars.module.css'
 
 
 export default function Cars(){
+
+
     const [cars, setCars] = useState([])
     const [car, setCar] = useState(null)
+
 
 
     useEffect(()=>{
@@ -17,10 +20,14 @@ export default function Cars(){
     },[])
 
 
+
+
+
+
     return(<div className={css.container}>
 
-        <CarForm setCars={setCars} setCar={setCar} />
+        <CarForm setCars={setCars}/>
 
-        {cars.map(car => <Car car={car} key={car.id} setCars={setCars} setCar={setCar} />)}
+        {cars.map(car => <Car car={car} key={car.id} setCars={setCars} updateCar={updateCar}/>)}
     </div>)
 }

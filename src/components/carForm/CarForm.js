@@ -32,6 +32,7 @@ export default function CarForm(props){
 
 
 
+
     return(<form className={css.box} onChange={()=>console.log(errors)} onSubmit={handleSubmit(submit)}>
         <input type='text' placeholder={'model'} {...register('model' )} />
         {errors.model && <span>{errors.model.message}</span>}
