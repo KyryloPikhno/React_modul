@@ -1,8 +1,11 @@
 import {useForm} from "react-hook-form";
+import {commentAxiosService} from "../services";
 
-const CommentForm =()=>{
+const CommentForm =(props)=>{
 
-   const [register,handleSubmit] = useForm({
+    const {setComment,post} = props
+
+   const {register,handleSubmit} = useForm({
         mode: "all",
         defaultValues:{
           body:'body' ,
@@ -10,12 +13,18 @@ const CommentForm =()=>{
         }
     })
 
+const push = (obg) => {
+
+    commentAxiosService.createComment(post.id)
+        .then(({data}) => console.log(data))
+        .then(value => setComment(value))
+}
 
 
-
-    return(<form onSubmit={handleSubmit()}>
-<input type='text' {...register('email')}/>
-  <input type='text' {...register('body')}/>
+    return(<form onSubmit={handleSubmit(push)}>
+      <input type='text' {...register('body')}/>
+      <input type='text' {...register('email')}/>
+        <button >Submit</button>
     </form>)
 }
 

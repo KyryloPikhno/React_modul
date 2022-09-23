@@ -3,6 +3,7 @@ import {useEffect, useState} from "react";
 import {postService, userService} from "../services";
 import {UserForm} from "../userForm/UserForm";
 import {Post} from "../post/Post";
+import {CommentForm} from "../commentForm/CommentForm";
 
 const Users=(props)=>{
 
@@ -26,6 +27,7 @@ const[posts,setPosts] = useState([])
 
     return(<div>
         <div>
+
          <UserForm setUsers={setUsers}/>
         </div>
         {users.map((user, index) => <User user={user} key={index} getPosts={getPosts}/>)}
