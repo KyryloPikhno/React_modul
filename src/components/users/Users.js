@@ -1,21 +1,39 @@
 import {User} from "../user/User";
 import {useEffect, useState} from "react";
-import {userService} from "../services";
+import {postService, userService} from "../services";
 import {UserForm} from "../userForm/UserForm";
+import {Post} from "../post/Post";
 
 const Users=()=>{
    const [users,setUsers] = useState([])
+const[posts,setPosts] = useState([])
+
 
     useEffect(()=>{
         userService.getAll()
             .then(({data})=>setUsers(data))
     },[])
 
+
+    const getPosts = (id) =>{
+       // fetch('https://jsonplaceholder.typicode.com/users/'+id+'/posts')
+       //     .then(value=>value.json())
+       //     .then(value=>setPosts(value))
+       postService.getAllPostsOfUser(id).then(({data})=>setPosts(data))
+    }
+
+
+
+
     return(<div>
         <div>
          <UserForm setUsers={setUsers}/>
         </div>
-        {users.map((user, index) => <User user={user} key={index}/>)}
+        {users.map((user, index) => <User user={user} key={index} getPosts={getPosts}/>)}
+
+        <div>
+            {posts.map((post)=> <Post post={post} key={post.id}/>)}
+        </div>
     </div>)
 }
 
