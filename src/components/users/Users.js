@@ -4,23 +4,22 @@ import {postService, userService} from "../services";
 import {UserForm} from "../userForm/UserForm";
 import {Post} from "../post/Post";
 
-const Users=()=>{
+const Users=(props)=>{
+
+    const {addComment} = props
+
    const [users,setUsers] = useState([])
 const[posts,setPosts] = useState([])
-
 
     useEffect(()=>{
         userService.getAll()
             .then(({data})=>setUsers(data))
     },[])
 
-
     const getPosts = (id) =>{
-       // fetch('https://jsonplaceholder.typicode.com/users/'+id+'/posts')
-       //     .then(value=>value.json())
-       //     .then(value=>setPosts(value))
        postService.getAllPostsOfUser(id).then(({data})=>setPosts(data))
     }
+
 
 
 
