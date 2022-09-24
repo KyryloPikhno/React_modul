@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    background: dimgrey;
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 5px   black;
+}
+
+.item{
+    color: white;
+    text-decoration: none;
+}
+
+.item:hover{
+    color: black;
+}
