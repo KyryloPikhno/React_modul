@@ -1,24 +1,25 @@
-import {Link,Routes,Route} from "react-router-dom";
+import {Routes,Route,Navigate} from "react-router-dom";
 
-import {Albums, Comments, Todos, Post} from "./components";
-import css from './App.module.css'
+import {MainLayout} from "./layouts";
+import {AboutPage, AlbumsPage, CommentsPage, HomePage, NotFoundPage, TodosPage} from "./pages";
+
+
 
 function App() {
-  return (<div className={css.container}>
-      <div className={css.nav}>
-        <div><Link to={'/todos'} className={css.item}>todos</Link></div>
-        <div><Link to={'/albums'} className={css.item}>albums</Link></div>
-        <div><Link to={'/comments'} className={css.item}>comments</Link></div>
-      </div>
-      <div>
+  return (
+
           <Routes>
-              <Route path={'/todos'} element={<Todos/>}/>
-              <Route path={'/albums'} element={<Albums/>}/>
-              <Route path={'/comments'} element={<Comments/>}/>
-              <Route path={'/comments/post/postId=:id'} element={<Post/>}/>
-          </Routes>
-      </div>
-    </div>);
+              <Route path={'/'} element={<MainLayout/>}>
+                  <Route index element={<Navigate to={'home'}/>}/>
+                      <Route path={'home'} element={<HomePage/>}/>
+                  <Route path={'todos'} element={<TodosPage/>}/>
+                  <Route path={'albums'} element={<AlbumsPage/>}/>
+                  <Route path={'comments'} element={<CommentsPage/>}/>
+                  <Route path={'about'} element={<AboutPage/>}/>
+          </Route>
+               <Route path={'*'} element={<NotFoundPage/>}/>
+      </Routes>
+  )
 }
 
 export default App;
