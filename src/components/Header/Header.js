@@ -1,11 +1,14 @@
 // import React from 'react';
 import css from './header.module.css'
 
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 
 
 const Header = () => {
+
+   const navigate = useNavigate()
+
     return (
         <div>
             <div className={css.header}>
@@ -16,8 +19,8 @@ const Header = () => {
                 <NavLink to={'/about'}>About</NavLink>
             </div>
             <div>
-                <button>Prev</button>
-                <button>Next</button>
+                <button onClick={()=>navigate(-1)}>Prev</button>
+                <button onClick={()=>navigate(1)}>Next</button>
             </div>
         </div>
     );

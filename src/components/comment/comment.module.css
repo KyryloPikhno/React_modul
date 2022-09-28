@@ -1,5 +1,5 @@
 .comment{
-    border:2px solid black;
+    background: darkgrey;
     display:flex;
     flex-direction: column;
     align-items: center;

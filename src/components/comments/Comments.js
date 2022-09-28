@@ -14,9 +14,6 @@ const [comments, setComments] = useState([])
             .then(({data})=>setComments(data))
     },[])
 
-
-
-
     return(<div className={css.comments}>
         {
             comments.map(comment => <Comment comment={comment} key={comment.id}/>)

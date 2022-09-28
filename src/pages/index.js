@@ -4,3 +4,4 @@
  export * from './NotFoundPage/NotFoundPage'
  export * from './TodosPage/TodosPage'
  export * from './HomePage/HomePage'
+ export * from  './PostDetailsPage/PostDetailsPage'

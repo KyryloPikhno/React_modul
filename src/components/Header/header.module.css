@@ -1,4 +1,10 @@
+body{
+    background: white;
+}
+
+
 .header{
+    width: 1000px;
     min-height: 50px;
     background: darkgrey;
     display: flex;
