@@ -5,4 +5,4 @@ export * from './todo/Todo';
 export * from './album/Album';
 export * from './albums/Albums';
 export * from './post/Post';
-export * from './Header/Header'
+export * from './header/Header'
