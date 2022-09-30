@@ -22,4 +22,4 @@ let reducer = (state, action) =>{
 
 const useCount1Reducer = () => useReducer(reducer, {count1: 0})
 
-export {reducer,useCount1Reducer}
+export {reducer, useCount1Reducer}

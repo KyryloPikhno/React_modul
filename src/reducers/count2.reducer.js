@@ -1,4 +1,4 @@
-import {useReducer} from "@types/react";
+import {useReducer} from "react";
 
 import {dec, inc, reset, set} from "./count.actions";
 
@@ -21,4 +21,6 @@ let reducer =(state, action) =>{
 
 const useCount2Reducer = () => useReducer(reducer, {count2: 0})
 
-export {reducer,useCount2Reducer}
+let reducer2 = reducer
+
+export {reducer2 ,useCount2Reducer}

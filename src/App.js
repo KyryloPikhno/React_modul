@@ -9,9 +9,8 @@ function App() {
         <div>
             <Count1/>
         </div>
-        <hr/>
         <div>
-            {/*<Count2/>*/}
+            <Count2/>
         </div>
     </div>
   );

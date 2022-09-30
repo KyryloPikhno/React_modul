@@ -7,10 +7,11 @@ const Count1 = () => {
     return (
         <div>
             <h1>Count1: {state.count1}</h1>
-            <buttun onClick={()=>dispatch({type: inc})}>INC</buttun>
-            <buttun onClick={()=>dispatch({type: dec})}>DEC</buttun>
-            <buttun onClick={()=>dispatch({type: reset})}>RESET</buttun>
-            <buttun onClick={()=>dispatch({type: set, payload:10})}>SET</buttun>
+
+            <button onClick={()=>dispatch({type: inc})}>INC</button>
+            <button onClick={()=>dispatch({type: dec})}>DEC</button>
+            <button onClick={()=>dispatch({type: reset})}>RESET</button>
+            <button onClick={()=>dispatch({type: set, payload:10})}>SET</button>
         </div>
     );
 };
