@@ -1,25 +1,22 @@
 import {useReducer} from "react";
 
-import {dec, inc, reset ,set} from "./count.actions";
+import {cats} from "./count.actions";
+import {name} from '../components/count1/Count1'
+import {Cat} from "../components/cat/Cat";
 
 
 
-let reducer = (state, action) =>{
+let reducer = (state, action) => {
+
     switch (action.type) {
-        case inc:
-            return {count1:state.count1 + 1}
-        case dec:
-            return {count1:state.count1 - 1}
-        case reset:
-            return {count1: 0}
-        case set:
-            return {count1: action.payload}
+        case name.cats:
+        return  {...state, count1:[name.cats]}
     }
     // return{...state}
 }
 
 
 
-const useCount1Reducer = () => useReducer(reducer, {count1: 0})
+const useCount1Reducer = () => useReducer(reducer, {count1:[]})
 
 export {reducer, useCount1Reducer}

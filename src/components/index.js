@@ -1,4 +1,5 @@
-export * from './user/User';
+export * from './cat/Cat'
+
 export * from './users/Users';
 export * from './userForm/UserForm';
 

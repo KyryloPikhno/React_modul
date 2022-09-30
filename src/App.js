@@ -1,4 +1,4 @@
-import {Count1, Count2} from "./components";
+import {Count1} from "./components";
 
 
 function App() {
@@ -9,9 +9,7 @@ function App() {
         <div>
             <Count1/>
         </div>
-        <div>
-            <Count2/>
-        </div>
+
     </div>
   );
 }
