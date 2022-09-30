@@ -1,1 +1,1 @@
-export * from './user.axios.service'
+export * from './auth.axios.service'
