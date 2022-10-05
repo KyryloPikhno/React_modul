@@ -1,6 +1,6 @@
 import {axiosService} from "./axios.service";
 
-import {urls} from "../config";
+import {urls} from "../configs";
 
 
 const userService ={

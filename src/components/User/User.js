@@ -1,9 +1,12 @@
-const User = () => {
+import  css from './user.module.css'
 
+
+const User = ({user}) => {
 
     return (
-        <div>
-            User
+        <div className={css.box}>
+            <div>{user.id}-{user.name}</div>
+            <div>{user.email}</div>
         </div>
     );
 };
