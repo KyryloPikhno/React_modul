@@ -17,7 +17,7 @@ const Users = () => {
             .then(({data})=>{
                 dispatch({type: 'LOAD_USERS', payload: data})
             })
-    },[])
+    },[dispatch])
 
     console.log(state.users)
     return (

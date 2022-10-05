@@ -17,7 +17,7 @@ const Comments = () => {
             .then(({data})=>{
                 dispatch({type: 'LOAD_COMMENTS', payload: data})
             })
-    },[])
+    },[dispatch])
 
     console.log(state.comments)
     return (

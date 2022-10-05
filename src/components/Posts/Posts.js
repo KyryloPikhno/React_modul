@@ -17,7 +17,7 @@ const Posts = () => {
             .then(({data})=>{
                 dispatch({type: 'LOAD_POSTS', payload: data})
             })
-    },[])
+    },[dispatch])
 
     console.log(state.posts)
     return (
