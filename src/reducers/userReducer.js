@@ -1,9 +1,7 @@
-import {createStore} from "redux";
 
 
-const initState ={users:[]}
 
-const userReducer = createStore((state = initState, action)=>{
+const userReducer = ((state = {users:[]}, action)=>{
 
     switch (action.type){
         case'LOAD_USERS':

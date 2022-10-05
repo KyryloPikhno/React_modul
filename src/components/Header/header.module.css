@@ -2,9 +2,8 @@ body{
     background: white;
 }
 
-
 .header{
-    width: 1000px;
+    width: 1100px;
     min-height: 50px;
     background: darkgrey;
     display: flex;

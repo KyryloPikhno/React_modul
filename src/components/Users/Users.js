@@ -3,13 +3,14 @@ import {useEffect} from "react";
 
 import {userService} from "../../services";
 import {User} from "../User/User";
+import css from './users.module.css'
 
 
 const Users = () => {
 
     const dispatch = useDispatch()
 
-    const state = useSelector(state => state)
+    const state = useSelector(state => state.userReducer)
 
     useEffect(()=>{
         userService.getAll()
@@ -20,13 +21,10 @@ const Users = () => {
 
     console.log(state.users)
     return (
-        <div>
-            <h3>users</h3>
-            <div>
+        <div className={css.container}>
             {
                 state.users.map((user,index) =><User key={index} user={user}/>)
             }
-            </div>
         </div>
     );
 };
