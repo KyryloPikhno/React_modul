@@ -6,13 +6,12 @@ import css from './Header.module.css'
 
 const Header = () => {
 
-    const {currentUser} = useSelector(state => state.userReducer)
-
-    console.log(currentUser);
+    const {currentUser, userFromAPI} = useSelector(state => state.userReducer)
 
     return (
         <div className={css.Header}>
-            {currentUser && currentUser.name}
+            <div>{currentUser && currentUser.name}</div>
+            <div>{userFromAPI && <h3>{userFromAPI.email}</h3>}</div>
         </div>
     );
 };

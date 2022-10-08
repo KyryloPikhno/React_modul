@@ -1,7 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 
-import {userService} from "../../services";
 import {userActions} from "../../redux/slices";
 import {User} from "../User/User";
 import css from './Users.module.css'
@@ -11,16 +10,18 @@ const Users = () => {
 
     const dispatch = useDispatch()
 
-    const {users} = useSelector(state => state.userReducer)
+    const {users, error, loading} = useSelector(state => state.userReducer)
 
     useEffect(()=>{
-        userService.getAll().then(({data})=> dispatch (userActions.getAll(data)))
+        dispatch (userActions.getAll())
+
+        // userService.getAll().then(({data})=> dispatch (userActions.getAll(data)))
     },[])
-
-
 
     return (
         <div className={css.container}>
+            {loading && <h1>loading...................(</h1>}
+            {error && <h1>Error</h1>}
             {users.map(user => <User key={user.id} user={user}/>)}
         </div>
     );
