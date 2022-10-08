@@ -7,22 +7,19 @@ import css from './Users.module.css'
 
 
 const Users = () => {
+    const dispatch = useDispatch();
+    const {users, error, loading} = useSelector(state => state.userReducer);
 
-    const dispatch = useDispatch()
-
-    const {users, error, loading} = useSelector(state => state.userReducer)
-
-    useEffect(()=>{
-        dispatch (userActions.getAll())
-
-        // userService.getAll().then(({data})=> dispatch (userActions.getAll(data)))
-    },[])
+    useEffect(() => {
+        // userService.getAll().then(({data})=>dispatch(userActions.getAll(data)))
+        dispatch(userActions.getAll())
+    }, [])
 
     return (
         <div className={css.container}>
-            {loading && <h1>loading...................(</h1>}
-            {error && <h1>Error</h1>}
-            {users.map(user => <User key={user.id} user={user}/>)}
+            {loading&&<h1>Loading...</h1>}
+            {error&& <h1>Error</h1>}
+            {users.map(user=><User key={user.id} user={user}/>)}
         </div>
     );
 };

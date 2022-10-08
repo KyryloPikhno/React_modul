@@ -1,23 +1,23 @@
 import {useDispatch} from "react-redux";
 
-import {userActions} from "../../redux/slices";
 import css from'./User.module.css'
-
+import {userActions} from "../../redux/slices";
 
 
 const User = ({user}) => {
+    const dispatch = useDispatch();
 
-    const {id,name,email,username} = user
-
-    const dispatch = useDispatch()
+    const {id, name, username, email} = user;
 
     return (
         <div className={css.box}>
-            <h3>{id} - {username}</h3>
-            <h3>{name}</h3>
-            <h3>{email}</h3>
-            <button onClick={()=>dispatch(userActions.setCurrentUser(user))}>show name</button>
-            <button onClick={()=>dispatch(userActions.getById({id}))}>Get from API</button>
+            <div>id: {id}</div>
+            <div>name: {name}</div>
+            <div>username: {username}</div>
+            <div>email: {email}</div>
+            <button onClick={() => dispatch(userActions.setCurrentUser(user))}>select</button>
+            <button onClick={() => dispatch(userActions.getById({id}))}>getFromAPI</button>
+            <button onClick={()=>dispatch(userActions.deleteById(id))}>delete</button>
         </div>
     );
 };
