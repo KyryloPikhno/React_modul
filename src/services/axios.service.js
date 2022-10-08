@@ -4,7 +4,7 @@ import{baseURl} from "../configs";
 
 
 const axiosService = axios.create({
-    baseURL:baseURl
+    baseURL: baseURl
 })
 
 export {axiosService}

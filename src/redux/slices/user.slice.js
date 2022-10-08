@@ -13,15 +13,19 @@ const userSlice = createSlice({
     initialState,
     reducers:{
         getAll:(state, action)=>{
-            state = action.payload
-        }
+            state.users = action.payload
+        },
+        setCurrentUser:(state , action)=>{
+            state.currentUser = action.payload
+       }
     }
 })
 
-const{reducer: userReducer, actions:{getAll}} =userSlice
+const{reducer: userReducer, actions: {getAll, setCurrentUser}} = userSlice
 
 const userActions={
-    getAll
+    getAll,
+    setCurrentUser
 }
 
 export {
