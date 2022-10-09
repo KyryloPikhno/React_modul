@@ -5,8 +5,13 @@
     gap: 150px;
     background: black;
     color: white;
-    font-size: 30px;
     height: 60px;
-    margin-bottom: 20px;
     padding-right: 30px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 2px 2px 25px 2px black;
+}
+
+.post{
+    color: darkorange;
 }

@@ -1,4 +1,5 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
+
 import {userService} from "../../services";
 
 
@@ -42,7 +43,7 @@ const userSlice = createSlice({
           //     state.users = action.payload
           // },
           setCurrentUser: (state,action)=>{
-              state.currentUser = action.payload
+                state.currentUser = action.payload
         },
           deleteById: (state, action)=>{
                 const index = state.users.findIndex(user=> user.id === action.payload)
@@ -56,10 +57,11 @@ const userSlice = createSlice({
                 state.loading = false
             })
             .addCase(getAll.rejected,(state , action)=>{
-                state.error = action.payload
+                state.errorPost = action.payload
                 state.loading = false
             })
             .addCase(getAll.pending,(state,action)=>{
+                state.loading = action.payload
                 state.loading = true
             })
             .addCase(getById.fulfilled,(state,action)=>{

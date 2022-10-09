@@ -1,9 +1,13 @@
 import {Header, Posts, Users} from "./components";
+import css from './style/App.module.css'
+
 
 function App() {
   return (
-    <div>
-      <Header/>
+    <div className={css.container}>
+        <div>
+             <Header/>
+        </div>
         <div>
             <Users/>
              <hr/>

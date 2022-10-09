@@ -14,8 +14,7 @@ const Users = () => {
 
     useEffect(()=>{
         dispatch(userActions.getAll())
-        // userService.getAll().then(({data})=>dispatch(userActions.getAll(data)))
-    },[])
+    },[dispatch])
 
     return (
         <div className={css.container}>
