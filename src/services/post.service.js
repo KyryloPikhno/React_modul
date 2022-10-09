@@ -4,7 +4,7 @@ import {urls} from "../configs";
 
 
 const postService ={
-    getAll : ()=>axiosService(urls.posts)
+    getAll: ()=>axiosService(urls.posts)
 }
 
 export {
