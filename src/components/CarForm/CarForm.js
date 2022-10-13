@@ -26,6 +26,7 @@ const CarForm = () => {
         }else{
             await dispatch(carActions.createCar({car:obj}))
         }
+        reset()
     }
 
     return (
