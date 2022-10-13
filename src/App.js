@@ -1,18 +1,12 @@
-import {Header, Posts, Users} from "./components";
-import css from './style/App.module.css'
+import {CarForm, Cars} from "./components";
 
 
 function App() {
   return (
-    <div className={css.container}>
-        <div>
-             <Header/>
-        </div>
-        <div>
-            <Users/>
-             <hr/>
-            <Posts/>
-        </div>
+    <div>
+        <CarForm/>
+        <hr/>
+        <Cars/>
     </div>
   );
 }
