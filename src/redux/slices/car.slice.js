@@ -90,7 +90,7 @@ const carSlice = createSlice({
             })
             .addDefaultCase((state,action)=>{
                const [pathElement] = action.type.split('/').splice(-1)
-                if(pathElement === 'reject'){
+                if(pathElement === 'rejected'){
                     state.error = action.payload
                     state.loading = false
                 }else{

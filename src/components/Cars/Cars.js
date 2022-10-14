@@ -1,17 +1,18 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+
 import {carActions} from "../../redux/slices";
 import {Car} from "../Car/Car";
 
 
 const Cars = () => {
 
-    const dispach = useDispatch()
+    const dispatch = useDispatch()
 
     const {cars} = useSelector(state => state.carReducer)
 
     useEffect(()=>{
-        dispach(carActions.getAll())
+        dispatch(carActions.getAll())
     },[])
 
     return (

@@ -1,7 +1,10 @@
 .box{
+    width: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border:2px solid black;
     padding: 20px;
+    gap: 3px;
 }

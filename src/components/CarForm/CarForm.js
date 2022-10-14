@@ -1,6 +1,7 @@
 import {useForm} from "react-hook-form";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
+
 import {carActions} from "../../redux/slices";
 
 
@@ -8,7 +9,7 @@ const CarForm = () => {
 
     const{handleSubmit, register, reset, setValue}= useForm()
 
-    const {carForUpdate} = useSelector(state => state.carReducer)
+    const {carForUpdate, error} = useSelector(state => state.carReducer)
 
     const dispatch = useDispatch()
 
@@ -35,6 +36,8 @@ const CarForm = () => {
             <input type='text' placeholder={'price'} {...register('price')}/>
             <input type='text' placeholder={'year'} {...register('year')}/>
             <button>{carForUpdate? 'Update':'Create'}</button>
+
+            {error && <h3>Error...</h3>}
         </form>
     );
 };
