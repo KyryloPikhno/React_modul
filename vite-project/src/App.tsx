@@ -6,7 +6,30 @@ interface FunctionalComponentProps {
 
 interface ClassComponentProps {}
 
-class ExampleComponent extends React.Component<ClassComponentProps> {
+const ExampleFunctionalComponent = () => {
+  const [count, setCount] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    if (!isMounted) {
+      console.log("did mount");
+      setIsMounted(true);
+    }
+    console.log(count, "did update");
+
+    return () => {
+      console.log("will unmount");
+    };
+  }, [count]);
+
+  return (
+    <button className="border p-6" onClick={() => setCount(count + 1)}>
+      {`Clicked ${count} times`}
+    </button>
+  );
+};
+
+class ExampleClassComponent extends React.Component<ClassComponentProps> {
   constructor(props) {
     super(props);
     this.state = {
@@ -82,4 +105,4 @@ class ClassComponent extends React.Component<ClassComponentProps> {
   }
 }
 
-export default ClassComponent;
+export default ExampleFunctionalComponent;
