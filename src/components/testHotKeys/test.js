@@ -5,6 +5,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+                } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
@@ -26,7 +35,16 @@ const data =[
         type:"div",
         screen:"shop",
         name:"test",
-        isActive:true,      
+        isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]      
         style:{ 
             with:2,
             height:2,
@@ -41,6 +59,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
@@ -55,6 +82,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
@@ -69,6 +105,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
@@ -83,6 +128,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
@@ -97,6 +151,15 @@ const data =[
         screen:"shop",
         name:"test",
         isActive:true,
+        subscreen:[
+            {
+                status: "active",
+                name:"test sub",
+                style:{
+                display:"block"
+            } 
+            }
+        ]
         style:{ 
             with:2,
             height:2,
