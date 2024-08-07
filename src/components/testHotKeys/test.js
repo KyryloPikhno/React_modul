@@ -9,11 +9,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
                 } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
@@ -24,11 +32,19 @@ const data =[
         children:[
             {
                 id:1,
-                type:"div",
+          
+          subscreen:[
+            {
+                name:"test-1",
+                style:{
+                    position:"absolute"
+                },
+            }
+          ] ,     type:"div",
                 screen:"shop",
                 name:"test",
             }
-        ]
+        ],
     },
     {
         id:2,
@@ -40,11 +56,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]      
+        ],      
         style:{ 
             with:2,
             height:2,
@@ -63,11 +87,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
@@ -86,11 +118,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
@@ -109,11 +149,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
@@ -132,11 +180,19 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
@@ -155,17 +211,33 @@ const data =[
             {
                 status: "active",
                 name:"test sub",
+                subscreen:[
+                    {
+                        name:"test-1",
+                        style:{
+                            position:"absolute"
+                        },
+                    }
+                ],
                 style:{
                 display:"block"
             } 
             }
-        ]
+        ],
         style:{ 
             with:2,
             height:2,
             position:"absolute",
+            subscreen:[
+                {
+                    name:"test-1",
+                    style:{
+                        position:"absolute"
+                    },
+                }
+            ],
             top:0,
             backgroundColor:"red"
         }
     },
-]
+],
