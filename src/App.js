@@ -1,42 +1,18 @@
 import './App.css';
 
+import { compose } from 'lodash/fp';
+
 function App() {
-  const getConversionRate = (fromCurrency, toCurrency) => {
-    const rates = {
-      EUR: { JPY: 130, USD: 1.18 },
-      USD: { EUR: 0.85, JPY: 110 },
-    };
-    return rates[fromCurrency][toCurrency];
-  };
+  const add5 = (x) => x + 5;
+  const multiplyBy3 = (x) => x * 3;
+  const subtract10 = (x) => x - 10;
 
-  const applyConversionRate = (amount, conversionRate) =>
-    amount * conversionRate;
-
-  const compose =
-    (...fns) =>
-    (x) =>
-      fns.reduceRight((acc, fn) => fn(acc), x);
-
-  const convertCurrency = (amount, fromCurrency, toCurrency) => {
-    const conversionRate = getConversionRate(fromCurrency, toCurrency);
-    return applyConversionRate(amount, conversionRate);
-  };
-
-  const amountToConvert = 100;
-  const fromCurrency = 'USD';
-  const toCurrency = 'EUR';
-
-  const convertedAmount = convertCurrency(
-    amountToConvert,
-    fromCurrency,
-    toCurrency
-  );
+  const composedFunction = compose(subtract10, multiplyBy3, add5);
+  const result = composedFunction(7);
 
   return (
     <div>
-      <p>
-        {`${amountToConvert} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`}
-      </p>
+      <p>{`result: ${result}`}</p>
     </div>
   );
 }
