@@ -1,22 +1,26 @@
-import {User} from "../user/User";
-import {useEffect, useState} from "react";
-import {userService} from "../services";
-import {UserForm} from "../userForm/UserForm";
+import { useEffect, useState } from 'react';
 
-const Users=()=>{
-   const [users,setUsers] = useState([])
+import { userService } from '../services';
+import { User } from '../user/User';
+import { UserForm } from '../userForm/UserForm';
 
-    useEffect(()=>{
-        userService.getAll()
-            .then(({data})=>setUsers(data))
-    },[])
+const Users = () => {
+  const [users, setUsers] = useState([]);
 
-    return(<div>
-        <div>
-         <UserForm setUsers={setUsers}/>
-        </div>
-        {users.map((user, index) => <User user={user} key={index}/>)}
-    </div>)
-}
+  useEffect(() => {
+    userService.getAll().then(({ data }) => setUsers(data));
+  }, []);
 
-export {Users}
+  return (
+    <div>
+      <div>
+        <UserForm setUsers={setUsers} />
+      </div>
+      {users.map((user, index) => (
+        <User user={user} key={index} />
+      ))}
+    </div>
+  );
+};
+
+export { Users };

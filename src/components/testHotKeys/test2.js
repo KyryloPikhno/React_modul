@@ -1,1951 +1,1959 @@
-const data =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
-        ],
-    },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-]
+const data = [
+  {
+    children: [
+      {
+        id: 1,
 
-const dataV2 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
         },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
     },
-]
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
 
-const dataV3 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
-        ],
-    },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-]
+const dataV2 = [
+  {
+    children: [
+      {
+        id: 1,
 
-const dataV4 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
         },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
     },
-]
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
 
-const dataV5 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
-        ],
-    },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-]
+const dataV3 = [
+  {
+    children: [
+      {
+        id: 1,
 
-const dataV6 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
         },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
     },
-]
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
 
-const dataV7 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
-        ],
-    },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-]
+const dataV4 = [
+  {
+    children: [
+      {
+        id: 1,
 
-const dataV8 =[
-    {
-        id:1,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-                } 
-            }
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
         },
-        children:[
-            {
-                id:1,
-          
-          subscreen:[
-            {
-                name:"test-1",
-                style:{
-                    position:"absolute"
-                },
-            }
-          ] ,     type:"div",
-                screen:"shop",
-                name:"test",
-            }
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:2,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
-        ],      
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
-    },
-    {
-        id:3,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:4,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:5,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:6,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
     },
-    {
-        id:7,
-        type:"div",
-        screen:"shop",
-        name:"test",
-        isActive:true,
-        subscreen:[
-            {
-                status: "active",
-                name:"test sub",
-                subscreen:[
-                    {
-                        name:"test-1",
-                        style:{
-                            position:"absolute"
-                        },
-                    }
-                ],
-                style:{
-                display:"block"
-            } 
-            }
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
         ],
-        style:{ 
-            with:2,
-            height:2,
-            position:"absolute",
-            subscreen:[
-                {
-                    name:"test-1",
-                    style:{
-                        position:"absolute"
-                    },
-                }
-            ],
-            top:0,
-            backgroundColor:"red"
-        }
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
     },
-]
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
+
+const dataV5 = [
+  {
+    children: [
+      {
+        id: 1,
+
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
+
+const dataV6 = [
+  {
+    children: [
+      {
+        id: 1,
+
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
+
+const dataV7 = [
+  {
+    children: [
+      {
+        id: 1,
+
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];
+
+const dataV8 = [
+  {
+    children: [
+      {
+        id: 1,
+
+        name: 'test',
+        screen: 'shop',
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+        type: 'div',
+      },
+    ],
+    id: 1,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 2,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 3,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 4,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 5,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 6,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+  {
+    id: 7,
+    isActive: true,
+    name: 'test',
+    screen: 'shop',
+    style: {
+      backgroundColor: 'red',
+      height: 2,
+      position: 'absolute',
+      subscreen: [
+        {
+          name: 'test-1',
+          style: {
+            position: 'absolute',
+          },
+        },
+      ],
+      top: 0,
+      with: 2,
+    },
+    subscreen: [
+      {
+        name: 'test sub',
+        status: 'active',
+        style: {
+          display: 'block',
+        },
+        subscreen: [
+          {
+            name: 'test-1',
+            style: {
+              position: 'absolute',
+            },
+          },
+        ],
+      },
+    ],
+    type: 'div',
+  },
+];

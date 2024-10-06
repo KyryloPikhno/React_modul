@@ -6,10 +6,10 @@ const TestCursor = () => {
     const data = [];
     for (let i = 1; i <= 1000; i++) {
       data.push({
-        id: i,
+        age: Math.floor(Math.random() * 50) + 18,
         firstName: `FirstName${i}`,
-        lastName: `LastName${i}`,
-        age: Math.floor(Math.random() * 50) + 18 // Random age between 18 and 67
+        id: i,
+        lastName: `LastName${i}`, // Random age between 18 and 67
       });
     }
     return data;
@@ -38,7 +38,8 @@ const TestCursor = () => {
             </tr>
           ))}
         </tbody>
-      </table><table>
+      </table>
+      <table>
         <thead>
           <tr>
             <th>User ID</th>
@@ -57,7 +58,8 @@ const TestCursor = () => {
             </tr>
           ))}
         </tbody>
-      </table><table>
+      </table>
+      <table>
         <thead>
           <tr>
             <th>User ID</th>
@@ -76,7 +78,8 @@ const TestCursor = () => {
             </tr>
           ))}
         </tbody>
-      </table><table>
+      </table>
+      <table>
         <thead>
           <tr>
             <th>User ID</th>
