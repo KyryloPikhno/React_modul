@@ -1,20 +1,11 @@
-import './App.css';
-
-import { compose } from 'lodash/fp';
+import Compose from "./components/compose/Compose"
 
 function App() {
-  const add5 = (x) => x + 5;
-  const multiplyBy3 = (x) => x * 3;
-  const subtract10 = (x) => x - 10;
-
-  const composedFunction = compose(subtract10, subtract10, multiplyBy3, add5);
-  const result = composedFunction(7);
-
   return (
-    <div>
-      <p>{`result: ${result}`}</p>
+    <div className="flex justify-center mt-5 text-[20px]">
+      <Compose />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

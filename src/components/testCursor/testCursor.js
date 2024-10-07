@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react"
 
 const TestCursor = () => {
   // Generate 1000 rows of mock data
   const generateData = () => {
-    const data = [];
+    const data = []
     for (let i = 1; i <= 1000; i++) {
       data.push({
         age: Math.floor(Math.random() * 50) + 18,
         firstName: `FirstName${i}`,
         id: i,
         lastName: `LastName${i}`, // Random age between 18 and 67
-      });
+      })
     }
-    return data;
-  };
+    return data
+  }
 
-  const tableData = generateData();
+  const tableData = generateData()
 
   return (
     <div>
@@ -100,7 +100,7 @@ const TestCursor = () => {
         </tbody>
       </table>
     </div>
-  );
-};
+  )
+}
 
-export default TestCursor;
+export default TestCursor
