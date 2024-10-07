@@ -4,7 +4,16 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "simple-import-sort/imports": "error",
-    "sort-keys-fix/sort-keys-fix": "warn"
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "react/jsx-sort-props": "error",
+    // "sort-keys": 2,
+    "sort-vars": 2,
+    // TODO re-enable later, 
+    "@next/next/no-img-element": 0,
+    "@next/next/no-page-custom-font": 0
   },
   "settings": {
     "react": {
