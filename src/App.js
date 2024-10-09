@@ -1,11 +1,5 @@
-import Chat from "./components/chat/Chat"
-
 function App() {
-  return (
-    <div className="flex justify-center mt-5 text-[20px]">
-      <Chat />
-    </div>
-  )
+  return <div className="flex justify-center mt-5 text-[20px]"></div>
 }
 
 export default App
