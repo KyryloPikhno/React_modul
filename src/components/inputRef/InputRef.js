@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react"
+import { forwardRef, useEffect, useRef, useState } from "react"
 
-const InputRef = () => {
+const WrapperInputRef = () => {
   const [inputValue, setInputValue] = useState("")
   const previousInputValue = useRef("")
 
@@ -9,17 +9,29 @@ const InputRef = () => {
   }, [inputValue])
 
   return (
-    <div className="flex flex-col gap-4">
-      <input
-        className="border-[2px] border-[#000000] rounded-[4px]"
-        onChange={(e) => setInputValue(e.target.value)}
-        type="text"
-        value={inputValue}
-      />
-      <h2>Current value: {inputValue ? inputValue : "~"}</h2>
-      <h2>Previous value: {previousInputValue?.current ? previousInputValue.current : "~"}</h2>
-    </div>
+    <Input
+      onChange={(e) => setInputValue(e.target.value)}
+      previousValue={previousInputValue.current}
+      ref={previousInputValue}
+      value={inputValue}
+    />
   )
 }
 
-export default InputRef
+const Input = forwardRef((props, ref) => {
+  return (
+    <div className="flex flex-col gap-4">
+      <input
+        className="border-[2px] border-[#000000] rounded-[4px]"
+        onChange={props.onChange}
+        ref={ref}
+        type="text"
+        value={props.value}
+      />
+      <h2>Current value: {props.value ? props.value : "~"}</h2>
+      <h2>Previous value: {props.previousValue ? props.previousValue : "~"}</h2>
+    </div>
+  )
+})
+
+export default WrapperInputRef

@@ -1,9 +1,9 @@
-import InputRef from "./components/inputRef/InputRef"
+import WrapperInputRef from "./components/inputRef/InputRef"
 
-function App() {
+const App = () => {
   return (
     <div className="flex justify-center mt-5 text-[20px]">
-      <InputRef />
+      <WrapperInputRef />
     </div>
   )
 }
